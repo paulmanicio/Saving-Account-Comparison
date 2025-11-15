@@ -17,4 +17,12 @@ public class SavingsAccount {
     public double getBalance() {
         return balance;
     }
+
+    public void addMonthlyInterest() {
+        balance += balance * (annualInterestRate / 12);
+    }
+
+    public static void setAnnualInterestRate(double rate) {
+        annualInterestRate = rate;
+    }
 }
